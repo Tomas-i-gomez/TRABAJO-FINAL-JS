@@ -3,14 +3,14 @@
 // El primer paso es crear los articulos mediante objetos
 
 let artUno ={
-    name: "Vino",
+    name: "Vino ",
     tipo:"Tinto",
     rendimientoXpersona:3, // 3 personas por botella
     tamaño:"750cc"
 }
 
 let artDos ={
-    name: "Vino",
+    name: "Vino Blanco ",
     tipo:"Blanco",
     rendimientoXpersona:5, // 5 personas por botella
     tamaño:"750cc"
@@ -18,7 +18,7 @@ let artDos ={
 
 
 let artTres ={
-    name: "Espumante",
+    name: "Espumante ",
     tipo:"Extra Brut",
     rendimientoXpersona: 8, // 8 personas por botella
     tamaño:"750cc"
@@ -26,7 +26,7 @@ let artTres ={
 
 
 let artCuatro ={
-    name: "Cerveza",
+    name: "Cerveza ",
     tipo:"Rubia",
     rendimientoXpersona:1, // 1 personas por lata
     tamaño:"500cc"
@@ -39,7 +39,7 @@ let artCinco ={
     tamaño:"1000cc"
 }
 
-let arts = [artUno,artDos,artTres,artCuatro,artCinco]
+let arts = [artUno.name,artDos.name,artTres.name,artCuatro.name,artCinco.name]
 
 //Preguntamos si quiere realizar un evento
 
@@ -54,21 +54,21 @@ if (evento == 'Si') {
 // Le damos la posibilidad que elija al usuario el tipo de bebidas que quiere
 function Bebidas() {
     alert ('Bienvenido! Estos son los tipos de bebidas que trabajamos');
-    let tipoBebidas = prompt ('Elige la bebida que le interese' ,artUno ,'\n' ,artDos, '\n', artTres,'\n', artCuatro, '\n' ,artCinco)
+    let tipoBebidas = prompt ('Elige la bebida que le interese ' + arts)
     switch (tipoBebidas) {
-        case artUno:
+        case "Vino Tinto":
             alert (artUno.name);
             break;
-         case artDos:
+         case "Vino Blanco":
                 alert (artDos.name);
                 break;
-         case artTres:
+         case "Espumante":
                 alert (artTres.name);
                 break;
-         case artCuatro:
+         case "Cerveza":
                 alert (artCuatro.name);
                 break;
-        case artCinco:
+        case "Gaseosa":
                 alert (artCinco.name);
                 break;
         default:
@@ -99,7 +99,7 @@ do{
 } while (cantidadInvitados) 
 
 
-let datosUsuario = [nombre ,apellido ,edad ,correo]
+let datosUsuario = ["nombre" ,"apellido" ,"edad" ,"correo"]
 console.log (datosUsuario)
 
 function rendimientoXinvitados(cantidadInvitados, rendimientoXpersona) {
