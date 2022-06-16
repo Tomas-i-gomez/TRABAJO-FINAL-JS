@@ -103,7 +103,7 @@ let datosUsuario = [nombre ,apellido ,edad ,correo]
 console.log (datosUsuario)
 
 function rendimientoXinvitados(cantidadInvitados, rendimientoXpersona) {
-    return cantidadInvitados / arts (rendimientoXpersona)
+    return cantidadInvitados / tipobebidas [rendimientoXpersona]
 }
 
 rendimientoXinvitados();
