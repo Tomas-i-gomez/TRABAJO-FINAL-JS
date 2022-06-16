@@ -97,7 +97,5 @@ do{
 } while (cantidadInvitados) 
 
 
-
-function artElegidos (name) {
-    
-}
+let datosUsuario = [nombre ,apellido ,edad ,correo]
+console.log (datosUsuario)
