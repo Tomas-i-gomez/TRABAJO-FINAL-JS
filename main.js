@@ -5,14 +5,14 @@
 let artUno ={
     name: "Vino",
     tipo:"Tinto",
-    rendimientoXpersona:3,
+    rendimientoXpersona:3, // 3 personas por botella
     tamaño:"750cc"
 }
 
 let artDos ={
     name: "Vino",
     tipo:"Blanco",
-    rendimientoXpersona:5,
+    rendimientoXpersona:5, // 5 personas por botella
     tamaño:"750cc"
 }
 
@@ -20,7 +20,7 @@ let artDos ={
 let artTres ={
     name: "Espumante",
     tipo:"Extra Brut",
-    rendimientoXpersona: 8,
+    rendimientoXpersona: 8, // 8 personas por botella
     tamaño:"750cc"
 }
 
@@ -28,16 +28,18 @@ let artTres ={
 let artCuatro ={
     name: "Cerveza",
     tipo:"Rubia",
-    rendimientoXpersona:1,
+    rendimientoXpersona:1, // 1 personas por lata
     tamaño:"500cc"
 }
 
 let artCinco ={
     name: "Gaseosa",
     tipo:"Coca-Cola",
-    rendimientoXpersona:2,
+    rendimientoXpersona:2, // 2 personas por botella
     tamaño:"1000cc"
 }
+
+let arts = [artUno,artDos,artTres,artCuatro,artCinco]
 
 //Preguntamos si quiere realizar un evento
 
@@ -99,3 +101,9 @@ do{
 
 let datosUsuario = [nombre ,apellido ,edad ,correo]
 console.log (datosUsuario)
+
+function rendimientoXinvitados(cantidadInvitados, rendimientoXpersona) {
+    return cantidadInvitados / arts (rendimientoXpersona)
+}
+
+rendimientoXinvitados();
