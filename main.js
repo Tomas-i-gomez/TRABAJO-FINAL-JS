@@ -2,14 +2,14 @@
 
 // El primer paso es crear los articulos mediante objetos
 
-let artUno ={
+const artUno ={
     name: "Vino ",
     tipo:"Tinto",
     rendimientoXpersona:3, // 3 personas por botella
     tamaño:"750cc"
 }
 
-let artDos ={
+const artDos ={
     name: "Vino Blanco ",
     tipo:"Blanco",
     rendimientoXpersona:5, // 5 personas por botella
@@ -17,7 +17,7 @@ let artDos ={
 }
 
 
-let artTres ={
+const artTres ={
     name: "Espumante ",
     tipo:"Extra Brut",
     rendimientoXpersona: 8, // 8 personas por botella
@@ -25,14 +25,14 @@ let artTres ={
 }
 
 
-let artCuatro ={
+const artCuatro ={
     name: "Cerveza ",
     tipo:"Rubia",
     rendimientoXpersona:1, // 1 personas por lata
     tamaño:"500cc"
 }
 
-let artCinco ={
+const artCinco ={
     name: "Gaseosa",
     tipo:"Coca-Cola",
     rendimientoXpersona:2, // 2 personas por botella
@@ -40,6 +40,7 @@ let artCinco ={
 }
 
 let arts = [artUno.name,artDos.name,artTres.name,artCuatro.name,artCinco.name]
+let rendimiento = [artUno.rendimientoXpersona,artDos.rendimientoXpersona,artTres.rendimientoXpersona,artCuatro.rendimientoXpersona,artCinco.rendimientoXpersona]
 
 //Preguntamos si quiere realizar un evento
 
@@ -90,20 +91,25 @@ do{
         if(nombre == "" || apellido == "" || edad == "" || correo == ""){
             alert('Complete todos los datos')
         }else {
-            for (let i = cantidadInvitados; i<=600; i++) {
-               
+            for (let i = cantidadInvitados; i<=100; i++) {
+               console.log ('Por '+ i + ' invitados, el calculo es de ' + calculoBebida )
             }
         }                       
     }
     console.log(cantidadInvitados);
 } while (cantidadInvitados) 
 
+let calculoBebida = cantidadInvitados / rendimiento
+
+function rendimientoXinvitados(cantidadInvitados, rendimientoXpersona) {
+    return calculoBebida
+}
+rendimientoXinvitados();
 
 let datosUsuario = ["nombre" ,"apellido" ,"edad" ,"correo"]
 console.log (datosUsuario)
 
-function rendimientoXinvitados(cantidadInvitados, rendimientoXpersona) {
-    return cantidadInvitados / tipobebidas [rendimientoXpersona]
-}
-
-rendimientoXinvitados();
+// function rendimientoXinvitados(cantidadInvitados, rendimientoXpersona) {
+//     return cantidadInvitados / tipobebidas [rendimientoXpersona]
+// }
+// rendimientoXinvitados();
