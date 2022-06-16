@@ -39,6 +39,17 @@ let artCinco ={
     tamaño:"1000cc"
 }
 
+//Preguntamos si quiere realizar un evento
+
+let evento = prompt ('¿Está pensando en realizar un evento?');
+if (evento == 'Si') {
+    alert ('Está en el lugar indicado para que le presupuestemos sus bebidas')
+} else {
+    alert ('Ya llegará el momento!')
+}
+
+
+// Le damos la posibilidad que elija al usuario el tipo de bebidas que quiere
 function Bebidas() {
     alert ('Bienvenido! Estos son los tipos de bebidas que trabajamos');
     let tipoBebidas = prompt ('Elige la bebida que le interese' ,artUno ,'\n' ,artDos, '\n', artTres,'\n', artCuatro, '\n' ,artCinco)
@@ -64,6 +75,26 @@ function Bebidas() {
     }
 }
 Bebidas ();
+
+let cantidadInvitados;
+do{
+    cantidadInvitados = parseInt(prompt("¿Cual es la cantidad de invitados para su evento?"))
+    if (cantidadInvitados){
+        alert ('Complete los siguientes datos')
+        let nombre = prompt ('ingrese su nombre')
+    let apellido = prompt ('ingrese su apellido')
+    let edad = prompt ('ingrese su edad')
+    let correo = prompt ('ingrese su correo')
+        if(nombre == "" || apellido == "" || edad == "" || correo == ""){
+            alert('Complete todos los datos')
+        }else {
+            for (let i = cantidadInvitados; i<=600; i++) {
+               
+            }
+        }                       
+    }
+    console.log(cantidadInvitados);
+} while (cantidadInvitados) 
 
 
 
