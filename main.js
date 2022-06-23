@@ -55,7 +55,7 @@ if (evento == 'Si') {
 // Le damos la posibilidad que elija al usuario el tipo de bebidas que quiere
 function Bebidas() {
     alert ('Bienvenido! Estos son los tipos de bebidas que trabajamos');
-    let tipoBebidas = prompt ('Elige la bebida que le interese ' + arts)
+    let tipoBebidas = prompt (`Elige la bebida que le interese ${arts} `)
     switch (tipoBebidas) {
         case "Vino Tinto":
             alert (artUno.name);
