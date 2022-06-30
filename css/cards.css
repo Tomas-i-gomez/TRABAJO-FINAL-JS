@@ -1,0 +1,10 @@
+h3 {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}

@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <title> Calculadora de Bebidas </title>
 </head>
 <body>
-    <h1>CALCULADORA DE BEBIDAS</h1>
-    
+    <h2 id="quote" class="title">Estas pensando en realizar un evento?</br>Estas en el lugar indicado.</br>Te calculamos tu bebida</h2>
+<p class="subtitle"><h3>Elige la bebida que desees</h3></p>
+<!-- Productos  -->
+<div class="container">
+    <div class="row">
+        <!-- Elementos generados a partir del JSON -->
+        <main id="items" class="col-sm-8 row"></main>
+        <!-- Carrito -->
+        <aside class="col-sm-4">
+            <h2>Carrito</h2>
+            <!-- Elementos del carrito -->
+            <ul id="carrito" class="list-group"></ul>
+            <hr>
+            <!-- Precio total -->
+            <p class="text-right">Total: <span id="total"></span> pesos</p>
+            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+        </aside>
+    </div>
+</div>
 
 
 
@@ -21,6 +40,16 @@
 
 
 
-    <script src="main.js"></script>
+
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/cards.js"></script>
+    <script src="js/title.js"></script>
 </body>
 </html>
