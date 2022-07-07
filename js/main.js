@@ -291,4 +291,17 @@
 // renderizarProductos();
 // renderizarCarrito();
 
-
+Swal.fire({
+    title: 'Cuántos años tienes?',
+    text:'Para ver el contenido de ésta web debe ser mayor de 18 años',
+    icon: 'question',
+    input: 'range',
+    inputLabel: 'Coloque su edad',
+    inputAttributes: {
+      min: 18,
+      max: 100,
+      step: 1
+    },
+    inputValue: 25
+  })
+  

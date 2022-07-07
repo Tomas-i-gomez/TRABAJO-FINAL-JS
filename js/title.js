@@ -1,3 +1,4 @@
+
 let tl = gsap.timeline(), 
 
 split = new SplitText("#quote", {type:"words,chars"}), 
